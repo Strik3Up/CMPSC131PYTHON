@@ -12,26 +12,26 @@ gl = ['A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'D', 'F']
 gl2 = ['A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'D', 'F']
 gl3 = ['A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'D', 'F']
 """
-  if letter == "A":
-    gp = 4.0
-  elif letter == "A-":
-    gp = 3.67
-  elif letter == "B+":
-    gp = 3.33
-  elif letter == "B":
-    gp = 3.0
-  elif letter == "B-":
-    gp = 2.67
-  elif letter == "C+":
-    gp = 2.33
-  elif letter == "C":
-    gp = 2.0
-  elif letter == "D":
-    gp = 1.0
-  else:
-   gp = 0.0
-  float gp  
-  return gp  
+if letter == "A":
+  gp = 4.0 
+elif letter == "A-":
+  gp = 3.67
+elif letter == "B+":
+  gp = 3.33
+elif letter == "B":
+  gp = 3.0
+elif letter == "B-":
+  gp = 2.67
+elif letter == "C+":
+  gp = 2.33
+elif letter == "C":
+  gp = 2.0
+elif letter == "D":
+  gp = 1.0
+else:
+  gp = 0.0
+float gp  
+return gp  
 
 def run():
   """
