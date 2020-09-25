@@ -25,7 +25,7 @@ elif letter == "D":
   gp = 1.0
 else:
   gp = 0.0  
-return float(gp)  
+print(float(gp))  
 
 def run():
   """
