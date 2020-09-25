@@ -7,11 +7,6 @@ def getGradePoint(letter):
   YOU CAN NOT use any features/data structure we haven't learned in the class,
   including but not limited to list, dictionary and tuples.
   """
-"""  
-gl = ['A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'D', 'F']
-gl2 = ['A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'D', 'F']
-gl3 = ['A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'D', 'F']
-"""
 if letter == "A":
   gp = 4.0 
 elif letter == "A-":
@@ -29,9 +24,8 @@ elif letter == "C":
 elif letter == "D":
   gp = 1.0
 else:
-  gp = 0.0
-float gp  
-return gp  
+  gp = 0.0  
+return float(gp)  
 
 def run():
   """
