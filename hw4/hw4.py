@@ -1,4 +1,5 @@
 # Author: Yanling Wang yuw17@psu.edu
+# Collaborators: solo
 def getGradePoint(letter):
   """
   Given a letter grade, translate it into a gradepoint value between 0.0 and 4.0
