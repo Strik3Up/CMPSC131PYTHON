@@ -14,10 +14,10 @@ def is_palindrome1(s):
   """
   x = 0
   if (s != s[::-1]):
-      return s != s[::-1]
+      return s == s[::-1]
   else:  
     while (s == s[::-1]):
-      return s == s[::-1]
+      return 1 == 1
       break
 
 def is_palindrome2(s):
@@ -33,7 +33,7 @@ def is_palindrome2(s):
   if (s == s[::-1]):
     return s == s[::-1]
   else:
-    return s!= s[::-1]
+    return 1 == 0
     
   
   
