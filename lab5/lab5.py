@@ -18,7 +18,7 @@ def is_palindrome1(s):
   else:  
     while (s == s[::-1]):
       return s == s[::-1]
-    break
+      break
 
 def is_palindrome2(s):
   """
