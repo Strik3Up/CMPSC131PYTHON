@@ -1,7 +1,7 @@
 # Author: Yanling Wang yuw17@psu.edu
-# Collaborator:
-# Collaborator:
-# Collaborator:
+# Collaborator: Angus Hendrick ajh97@psu.edu
+# Collaborator: Yuxin Kang yjk5152@psu.edu
+# Collaborator: Travis Navarro trn5106@psu.edu
 # Section: 1
 # Breakout: 1
 
@@ -33,7 +33,7 @@ def is_palindrome2(s):
   if (s == s[::-1]):
     return s == s[::-1]
   else:
-    return is_palindrome1(s[::-1])
+    return s!= s[::-1]
     
   
   
