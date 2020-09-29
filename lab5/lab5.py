@@ -33,8 +33,8 @@ def is_palindrome2(s):
   if (s == s[::-1]):
     return s == s[::-1]
   else:
-    is_palidrome(s[::-1])
-    return False
+    return is_palindrome1(s[::-1])
+    
   
   
 
@@ -46,7 +46,7 @@ def is_palindrome3(s):
   Use slicing (with step being -1) to get the reverse of a
   string, and a string is a palindrome if it is equivalent to its reverse.
   """
-  return is_palidrome1(s)
+  return is_palindrome1(s)
 
 def run():
   s = input("Enter a string: ")
