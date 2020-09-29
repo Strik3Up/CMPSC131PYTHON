@@ -14,10 +14,10 @@ def is_palindrome1(s):
   """
   x = 0
   if (s != s[::-1]):
-      return False
+      return s != s[::-1]
   else:  
     while (s == s[::-1]):
-      return True
+      return s == s[::-1]
     break
 
 def is_palindrome2(s):
@@ -31,7 +31,7 @@ def is_palindrome2(s):
   slicing to get the middle of the string.
   """
   if (s == s[::-1]):
-    return True
+    return s == s[::-1]
   else:
     is_palidrome(s[::-1])
     return False
