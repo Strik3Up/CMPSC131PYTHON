@@ -9,7 +9,7 @@ def f1(a):
   return b
 
 def f2(n):
-  yl()
+  yl = [0]
   for x in range(1,n):
     fn = input("Enter an integer: ")
     t1 = f1(fn)
@@ -18,7 +18,7 @@ def f2(n):
 
 def run():
   ans = f"answer is {f2(n)}."
-  print(ans)
+  return ans
 
-if True: 
+if __name__ == "__main__": 
   run()
