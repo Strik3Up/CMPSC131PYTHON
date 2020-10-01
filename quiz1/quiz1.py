@@ -1,12 +1,24 @@
 # Author: 
 def f1(a):
-  return 0 
+  if (a < 0):
+    b = a*-1
+  elif (a > 0):
+    b = a
+  else:
+    b = 0
+  return b
 
 def f2(n):
-  return 0 
+  yl()
+  for x in range(1,n):
+    fn = input("Enter an integer: ")
+    t1 = f1(fn)
+    yl.append(t1)
+  return sum(yl)  
 
 def run():
-  return
+  ans = f"answer is {f2(n)}."
+  print(ans)
 
 if True: 
   run()
