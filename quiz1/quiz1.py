@@ -17,7 +17,7 @@ def f2(n):
   return sum(yl)  
 
 def run():
-  ans = f"answer is {f2(n)}."
+  ans = f"answer is {f2(n)}. \n"
   return ans
 
 if __name__ == "__main__": 
