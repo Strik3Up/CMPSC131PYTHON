@@ -1,7 +1,7 @@
 # Author: Yanling Wang yuw17@psu.edu
-# Collaborator:
-# Collaborator:
-# Collaborator:
+# Collaborator: Yifan Lu
+# Collaborator: Vineeth Gi
+# Collaborator: Aidan Connor
 # Section: 1
 # Breakout: 1
 
@@ -11,7 +11,15 @@ def count_non_overlapping(s, substr, start):
   starting from the index start.
   You can not use str method s.count.
   """
-  return 0
+  s = s[start:]
+  count = 0
+  i = 0
+  while i <= len(s) - len(substr):
+    if s[i:i + len(substr)] == substr:
+      count += 1
+      i += len(substr) - 1
+    i += 1
+  return count
 
 def count_non_overlapping_m(s, substr, start):
   """
@@ -19,14 +27,16 @@ def count_non_overlapping_m(s, substr, start):
   starting from the index start.
   You must use a one-liner implementation by using s.count().
   """
-  return 0
+  return s.count(substr, start)
 
 def find_smallest(t):
   """
   Return the smallest element in given list t.
   Return None if t is empty
   """
-  return t[0]
+  if len(t) == 0:
+    return
+  return min(t)
 
 def myfilter(t, cond):
   """
@@ -34,8 +44,12 @@ def myfilter(t, cond):
   given an element x in t.
   Return a new list that only includes element x from t such cond(x) is True. 
   """
-  return t 
-
+  c = []
+  for x in t:
+    if cond(x):
+      c.append(x)
+  return c
+  
 def is_palindrome(s):
   return s[::-1] == s
 
