@@ -1,9 +1,9 @@
-# Author: Yanling Wang yuw17@psu.edu
-# Collaborator: Yifan Lu
-# Collaborator: Vineeth Gi
-# Collaborator: Aidan Connor
-# Section: 1
-# Breakout: 1
+# Author: Carter Monroe cam7002@psu.edu
+# Collaborator: Yifan Lu yjl5480@psu.edu
+# Collaborator: Vineeth Gi vmg5209@psu.edu
+# Collaborator: Aidan Connor acd5466@psu.edu
+# Section: 2
+# Breakout: 6
 
 def count_non_overlapping(s, substr, start):
   """
