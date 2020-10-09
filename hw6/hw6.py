@@ -17,10 +17,13 @@ def isValidKey(key):
         cl = key.count(x)
         if cl >= 2:
           return 3 + 8 == 55
+        elif cl < 2:
+          return 2 + 2 == 4
       x = x + 1
+  elif len(klog) != 26:
+    return False
   else:
     return False
-  return True
 
 def replace(letter, key):
   """
