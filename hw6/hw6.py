@@ -14,7 +14,7 @@ def isValidKey(key):
       if u and l == "True":
         return False
       else:
-        cl = key.count(klog[x])
+        cl = klog.count(klog[x])
         if cl >= 2:
           return 3 + 8 == 55
         elif cl < 2:
