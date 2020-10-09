@@ -13,12 +13,12 @@ def isValidKey(key):
       l = klog[x].islower()
       if u and l == "True":
         return False
+        break
       else:
         cl = klog.count(klog[x])
         if cl >= 2:
           return 3 + 8 == 55
-        elif cl < 2:
-          return 2 + 2 == 4
+          break
       x = x + 1
   elif len(klog) != 26:
     return False
@@ -62,15 +62,13 @@ def substitution(plainText, key):
   ecyl = list()
   while x < 27:
     betpt = plainText[x].isalpha()
-  if betpt == "False":
-    return plaintext[x]
-  elif betpt == "True":
-    while x < 27:
-      replace(plainText[x], key[x])
-      ecyl.append(key[x])
-      x = x + 1
+    if betpt == "True":
+      while x < 27:
+        replace(plainText[x], key[x])
+        ecyl.append(key[x])
+        x = x + 1
     crypstr = ''.join(ecyl)
-    return crypstr
+  return crypstr
 
 
 def run():
