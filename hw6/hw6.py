@@ -1,10 +1,25 @@
-# Author: Yanling Wang yuw17@psu.edu
+# Author: Carter Monroe cam7002@psu.edu
 def isValidKey(key):
   """
   Returns True if key is a string that has 26 characters and each of the letter
   'a'/'A'-'z'/'Z' appeared once and only once in either lower case or upper case.
   Returns False otherwise.
   """
+  klog = list(key)
+  if len(klog) == 26:
+    x = 0
+    while x < 27:
+      u = klog[x].isupper()
+      l = klog[x].islower()
+      if u and l == "True":
+        return False
+      else:
+        cl = key.count(x)
+        if cl >= 2:
+          return 3 + 8 == 55
+      x = x + 1
+  else:
+    return False
   return True
 
 def replace(letter, key):
@@ -13,7 +28,18 @@ def replace(letter, key):
   Replace a single letter with its corresponding key, returns letter if it is
   not in the alphabet 'a'-'z' or 'A'-'Z'
   """
-  return letter
+  albet = letter.isalpha()
+  if albet == "False":
+    return letter
+  else:
+    logl = list(letter)
+    x = 0
+    while x < 27:
+      if logl[0] == key[x]:
+        return key[x]
+        break
+      else:
+        x = x + 1
 
 def substitution(plainText, key):
   """
@@ -28,7 +54,20 @@ def substitution(plainText, key):
   3. use ''.join(list_of_letters) to form the final string. Do not use + to do
   string concatenation to form the encrypted string.
   """
-  return plainText
+  plist = list(plainText)
+  x = 0
+  ecyl = list()
+  while x < 27:
+    betpt = plainText[x].isalpha()
+  if betpt == "False":
+    return plaintext[x]
+  elif betpt == "True":
+    while x < 27:
+      replace(plainText[x], key[x])
+      ecyl.append(key[x])
+      x = x + 1
+    crypstr = ''.join(ecyl)
+    return crypstr
 
 
 def run():
