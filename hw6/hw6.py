@@ -88,7 +88,7 @@ def run():
     return
   plainText = input("Plain Text: ")
   cipherText = substitution(plainText, key)
-  print(f"Cipher Text: {cipherText}")
+  print(f"Cipher Text: {cipherText}\n")
   return
 
 if __name__ == "__main__":
