@@ -20,7 +20,7 @@ def isValidKey(key):
           return 3 + 8 == 55
           break
         elif cl == 1:
-          return True
+          return False
       #x = x + 1
   elif len(klog) != 26:
     return False
