@@ -60,10 +60,10 @@ def substitution(plainText, key):
   plist = list(plainText)
   #x = 0
   ecyl = list()
-  for x in range(0,26):
+  for x in range(0,len(plist)):
     betpt = plainText[x].isalpha()
     if betpt == "True":
-      for x in range(0,26):
+      for x in range(0,len(plist)):
         replace(plainText[x], key[x])
         ecyl.append(key[x])
         #x = x + 1
