@@ -5,6 +5,7 @@ def isValidKey(key):
   'a'/'A'-'z'/'Z' appeared once and only once in either lower case or upper case.
   Returns False otherwise.
   """
+  a = key.isalpha()
   klog = list(key)
   if len(klog) == 26:
     #x = 0
@@ -24,7 +25,7 @@ def isValidKey(key):
       #x = x + 1
   elif len(klog) != 26:
     return False
-  else:
+  elif a == "False":
     return False
 
 def replace(letter, key):
