@@ -8,7 +8,7 @@ def isValidKey(key):
   klog = list(key)
   if len(klog) == 26:
     #x = 0
-    for x in range(0,27):
+    for x in range(0,26):
       u = klog[x].isupper()
       l = klog[x].islower()
       if u and l == "True":
@@ -37,7 +37,7 @@ def replace(letter, key):
   else:
     logl = list(letter)
     #x = 0
-    for x in range(0,27):
+    for x in range(0,26):
       if logl[0] == key[x]:
         return key[x]
         break
@@ -58,12 +58,12 @@ def substitution(plainText, key):
   string concatenation to form the encrypted string.
   """
   plist = list(plainText)
-  x = 0
+  #x = 0
   ecyl = list()
-  for x in range(0,27):
+  for x in range(0,26):
     betpt = plainText[x].isalpha()
     if betpt == "True":
-      for x in range(0,27):
+      for x in range(0,26):
         replace(plainText[x], key[x])
         ecyl.append(key[x])
         #x = x + 1
