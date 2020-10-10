@@ -20,7 +20,7 @@ def isValidKey(key):
           return 3 + 8 == 55
           break
         elif cl == 1:
-          return
+          return True
       #x = x + 1
   elif len(klog) != 26:
     return False
@@ -41,7 +41,7 @@ def replace(letter, key):
     #x = 0
     for x in range(0,26):
       if logl[0] == key[x]:
-        return
+        return key[x]
         break
       #else:
         #x = x + 1
@@ -70,7 +70,7 @@ def substitution(plainText, key):
         ecyl.append(key[x])
         #x = x + 1
     crypstr = ''.join(ecyl)
-  return ''
+  return crypstr
 
 
 def run():
