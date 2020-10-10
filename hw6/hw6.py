@@ -20,7 +20,7 @@ def isValidKey(key):
           return 3 + 8 == 55
           break
         elif cl == 1:
-          return False
+          return True
       #x = x + 1
   elif len(klog) != 26:
     return False
@@ -43,8 +43,8 @@ def replace(letter, key):
       if logl[0] == key[x]:
         return key[x]
         break
-      #else:
-        #x = x + 1
+      else:
+        x = x + 1
 
 def substitution(plainText, key):
   """
