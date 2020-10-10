@@ -7,8 +7,8 @@ def isValidKey(key):
   """
   klog = list(key)
   if len(klog) == 26:
-    x = 0
-    while x < 26:
+    #x = 0
+    for x in range(0,26):
       u = klog[x].isupper()
       l = klog[x].islower()
       if u and l == "True":
@@ -19,7 +19,7 @@ def isValidKey(key):
         if cl >= 2:
           return 3 + 8 == 55
           break
-      x = x + 1
+      #x = x + 1
   elif len(klog) != 26:
     return False
   else:
@@ -36,13 +36,13 @@ def replace(letter, key):
     return letter
   else:
     logl = list(letter)
-    x = 0
-    while x < 26:
+    #x = 0
+    for x in range(0,26):
       if logl[0] == key[x]:
         return key[x]
         break
-      else:
-        x = x + 1
+      #else:
+        #x = x + 1
 
 def substitution(plainText, key):
   """
@@ -60,13 +60,13 @@ def substitution(plainText, key):
   plist = list(plainText)
   x = 0
   ecyl = list()
-  while x < 26:
+  for x in range(0,26):
     betpt = plainText[x].isalpha()
     if betpt == "True":
-      while x < 26:
+      for x in range(0,26):
         replace(plainText[x], key[x])
         ecyl.append(key[x])
-        x = x + 1
+        #x = x + 1
     crypstr = ''.join(ecyl)
   return crypstr
 
