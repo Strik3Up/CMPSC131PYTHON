@@ -1,16 +1,22 @@
-# Author: Yanling Wang yuw17@psu.edu
-# Collaborator:
-# Collaborator:
-# Collaborator:
-# Section: 1
-# Breakout: 1
+# Author: Carter Monroe cam7002@psu.edu
+# Collaborator: Nasser Zaher nzz5096@psu.edu
+# Collaborator: Angela Bao ymb5072@psu.edu
+# Collaborator: Anna Gillard amg7307@psu.edu
+# Section: 2
+# Breakout: 5
 
 def remove_duplicate_sorted(t):
   """
   this function returns a new list generated from t that has t's
   elements without duplicates and is sorted from smallest to largest.
+  
+  make a set then sort the set
   """
-  return [] 
+  nt = set(t)
+  lnt = list(nt)
+  snt = sorted(lnt)
+  
+  return snt
 
 def list_to_dictionary(t):
   """
@@ -22,7 +28,18 @@ def list_to_dictionary(t):
   then return value of this function should be:
   {3: [(1, 2, 3), 'abc'], 2: [[1, 2]], 0: [(), '']}
   """
-  return {} 
+  dicf = dict()
+  for v in t:
+    x = len(t[v])
+    dicf[x] = t[v]
+  return dicf 
+
+for x in t:
+  if len(x) not in t:
+    dicf[len(x)] = [x]
+  else:
+    dicf[len(x)].append(x)
+return dicf
 
 def run():
   """
