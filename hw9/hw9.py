@@ -63,8 +63,7 @@ def get_legal_word_scores(letters, dictionary, value_dict):
   the score/key maps to a list of words that are from the
   dictionary with the given letters and finds that
   score. The list should be in alphabetical order.
-  """
-												
+  """												
   return {}
 
 def run():
