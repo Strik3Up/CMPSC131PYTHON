@@ -46,9 +46,11 @@ def get_word_score(word, value_dict):
   """
   
   lw = list(word)
+  c = 0
   e = list()
-  for x in lw:
-    e.append(value_dict[lw[x]])      
+  for x in word:
+    c + 1
+    e.append(value_dict[lw[c])      
   return e.sum()
 
 def get_legal_word_scores(letters, dictionary, value_dict):
@@ -62,7 +64,7 @@ def get_legal_word_scores(letters, dictionary, value_dict):
   dictionary with the given letters and finds that
   score. The list should be in alphabetical order.
   """
-  
+												
   return {}
 
 def run():
