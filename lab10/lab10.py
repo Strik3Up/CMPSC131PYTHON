@@ -46,6 +46,11 @@ def run():
   """
   i = input("Enter a string: \n")
   il = list(i)
+  ils = il.sorted()
+  ild = list_to_dictionary(il)
+  print(f"List: [{il}]\n")
+  print(f"Sorted List: [{ils}]\n")
+  print(f"Dict: {ild}\n")
   if i == "done":
     print(remove_duplicate_sorted(il))
     print(list_to_dictionary(il))
