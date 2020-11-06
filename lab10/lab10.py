@@ -31,9 +31,9 @@ def list_to_dictionary(t):
   dicf = dict()
   for x in t:
     if len(x) not in t:
-      dicf[str(len(x))] = [str(x)]
+      dicf[len(x)] = [x]
     else:
-      dicf[str(len(x))].append(str(x))
+      dicf[len(x)].append(list(x))
   return dicf
 
 def run():
@@ -46,14 +46,15 @@ def run():
   """
   i = input("Enter a string: \n")
   il = list(i)
-  ils = il.sort()
+  ils = remove_duplicate_sorted(il)
   ild = list_to_dictionary(il)
   print(f"List: [{il}]\n")
   print(f"Sorted List: [{ils}]\n")
   print(f"Dict: {ild}\n")
   if i == "done":
-    print(remove_duplicate_sorted(il))
-    print(list_to_dictionary(il))
+    print(f"List: []\n")
+    print(f"Sorted List: []\n")
+    print(f"Dict: {}\n"
 
 if __name__ == "__main__":
   run()
