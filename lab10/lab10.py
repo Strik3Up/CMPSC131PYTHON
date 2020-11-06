@@ -44,7 +44,7 @@ def run():
   list_to_dictionary() function and print out the results of the function
   calls.
   """
-  i = input("Enter a string: ")
+  i = input("Enter a string: \n")
   il = list(i)
   if i == "done":
     print(remove_duplicate_sorted(il))
