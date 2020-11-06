@@ -43,13 +43,17 @@ return dicf
 
 def run():
   """
-  This function repeatedly ask user to enter a string and store them in a
+  This function repeatedly asks the user to enter a string and store them in a
   list and print it out.
   It also passes this list to remove_duplicate_sorted() function and
   list_to_dictionary() function and print out the results of the function
   calls.
   """
-  return
+  i = input("Enter a string: ")
+  il = list(i)
+  if i == "done":
+    print(remove_duplicate_sorted(il))
+    print(list_to_dictionary(il))
 
 if __name__ == "__main__":
   run()
