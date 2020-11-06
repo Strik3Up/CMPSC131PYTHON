@@ -31,9 +31,9 @@ def list_to_dictionary(t):
   dicf = dict()
   for x in t:
     if len(x) not in t:
-      dicf[str(len(x))] = [x]
+      dicf[str(len(x))] = [str(x)]
     else:
-      dicf[str(len(x))].append(x)
+      dicf[str(len(x))].append(str(x))
   return dicf
 
 def run():
