@@ -28,12 +28,12 @@ def list_to_dictionary(t):
   then return value of this function should be:
   {3: [(1, 2, 3), 'abc'], 2: [[1, 2]], 0: [(), '']}
   """
-for x in t:
-  if len(x) not in t:
-    dicf[len(x)] = [x]
-  else:
-    dicf[len(x)].append(x)
-return dicf
+  for x in t:
+    if len(x) not in t:
+      dicf[len(x)] = [x]
+    else:
+      dicf[len(x)].append(x)
+  return dicf
 
 def run():
   """
