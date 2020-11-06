@@ -31,9 +31,9 @@ def list_to_dictionary(t):
   dicf = dict()
   for x in t:
     if len(x) not in t:
-      dicf[len(x)] = [str(x)]
+      dicf[str(len(x))] = [x]
     else:
-      dicf[len(x)].append(str(x))
+      dicf[str(len(x))].append(x)
   return dicf
 
 def run():
@@ -46,7 +46,7 @@ def run():
   """
   i = input("Enter a string: \n")
   il = list(i)
-  ils = il.sorted()
+  ils = il.sort()
   ild = list_to_dictionary(il)
   print(f"List: [{il}]\n")
   print(f"Sorted List: [{ils}]\n")
