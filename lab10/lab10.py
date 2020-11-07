@@ -44,13 +44,18 @@ def run():
   list_to_dictionary() function and print out the results of the function
   calls.
   """
-  i = input("Enter a string: \n")
-  il = list(i)
-  ils = remove_duplicate_sorted(il)
-  ild = list_to_dictionary(il)
-  print(f"List: [{il}]\n")
-  print(f"Sorted List: [{ils}]\n")
-  print(f"Dict: {ild}\n")
+  while i != "done":
+    i = input("Enter a string: \n")
+    il = list(i)
+    ils = remove_duplicate_sorted(il)
+    ild = list_to_dictionary(il)
+    print(f"List: [{il}]\n")
+    print(f"Sorted List: [{ils}]\n")
+    print(f"Dict: {ild}\n")
+  if i == "done":
+    print(f"List: [{il}]\n")
+    print(f"Sorted List: [{ils}]\n")
+    print(f"Dict: {ild}\n")
 
 if __name__ == "__main__":
   run()
