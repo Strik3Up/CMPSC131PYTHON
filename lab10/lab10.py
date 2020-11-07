@@ -47,6 +47,7 @@ def run():
   il = list()
   c = 0
   while c < 1: 
+    i = input("Enter a string: \n")
     if i == "done":
       ils = remove_duplicate_sorted(il)
       ild = list_to_dictionary(il)
@@ -55,7 +56,6 @@ def run():
       print(f"Dict: {ild}\n")
       c + 1
     else:
-      i = input("Enter a string: \n")
       il.append(i)
       ils = remove_duplicate_sorted(il)
       ild = list_to_dictionary(il)
