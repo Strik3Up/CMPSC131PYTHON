@@ -60,7 +60,7 @@ def run():
     #print(f"List: [{il}]\n")
     print(f"Sorted List: [{ils}]\n")
     print(f"Dict: {ild}\n")
-      c + 1
+    c + 1
       
 
 if __name__ == "__main__":
