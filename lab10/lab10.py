@@ -31,9 +31,7 @@ def list_to_dictionary(t):
   dicf = dict()
   for x in t:
     if len(x) not in t:
-      dicf[len(x)] = [x]
-    elif x is type(list):
-      dicf.update( len(x):x )   
+      dicf[len(x)] = x
     else:
       dicf[len(x)].append(x)
   return dicf
