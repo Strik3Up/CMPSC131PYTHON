@@ -44,7 +44,7 @@ def run():
   list_to_dictionary() function and print out the results of the function
   calls.
   """
-  il = list
+  il = list()
   c = 0
   while c < 1: 
     i = input("Enter a string: \n")
