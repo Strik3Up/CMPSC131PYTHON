@@ -59,9 +59,6 @@ def run():
       il.append(i)
       ils = remove_duplicate_sorted(il)
       ild = list_to_dictionary(il)
-      print(f"List: [{il}]\n")
-      print(f"Sorted List: [{ils}]\n")
-      print(f"Dict: {ild}\n")
       
 
 if __name__ == "__main__":
