@@ -51,10 +51,6 @@ def run():
   print(f"List: [{il}]\n")
   print(f"Sorted List: [{ils}]\n")
   print(f"Dict: {ild}\n")
-  if i == "done":
-    print(f"List: []\n")
-    print(f"Sorted List: []\n")
-    print(f"Dict: {}\n"
 
 if __name__ == "__main__":
   run()
