@@ -54,13 +54,13 @@ def run():
     print(f"List: [{il}]\n")
     print(f"Sorted List: [{ils}]\n")
     print(f"Dict: {ild}\n")
-  if i == "done":
-    ils = remove_duplicate_sorted(il)
-    ild = list_to_dictionary(il)
-    #print(f"List: [{il}]\n")
-    print(f"Sorted List: [{ils}]\n")
-    print(f"Dict: {ild}\n")
-    c + 1
+    if i == "done":
+      ils = remove_duplicate_sorted(il)
+      ild = list_to_dictionary(il)
+      #print(f"List: [{il}]\n")
+      print(f"Sorted List: [{ils}]\n")
+      print(f"Dict: {ild}\n")
+      c + 1
       
 
 if __name__ == "__main__":
