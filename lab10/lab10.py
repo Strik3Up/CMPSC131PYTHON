@@ -33,7 +33,7 @@ def list_to_dictionary(t):
     if len(x) not in t:
       dicf[len(x)] = [x]
     else:
-      dicf[len(x)].append([x])
+      dicf[len(x)].append(x)
   return dicf
 
 def run():
@@ -51,10 +51,11 @@ def run():
     if i == "done":
       ils = remove_duplicate_sorted(il)
       ild = list_to_dictionary(il)
-      print(f"List: {il}\n")
-      print(f"Sorted List: {ils}\n")
-      print(f"Dict: {ild}\n")
+      print(f"\nList: {il}\n")
+      print(f"\nSorted List: {ils}\n")
+      print(f"\nDict: {ild}\n")
       break
+      
     else:
       il.append(i)
       ils = remove_duplicate_sorted(il)
